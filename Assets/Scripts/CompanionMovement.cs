@@ -20,7 +20,7 @@ public class CompanionMovement : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    rb.AddForce(transform.up * UpwardThrust * Time.deltaTime);
+    // rb.AddForce(transform.up * UpwardThrust * Time.deltaTime);
     // Keeping companion's front towards player
     transform.LookAt(Player.transform);
     if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Ray))
@@ -33,7 +33,8 @@ public class CompanionMovement : MonoBehaviour
       }
       else if (TargetDistance < 2)
       {
-        rb.AddForce((transform.forward * -1) * 5.0f * Time.deltaTime, ForceMode.Impulse);
+        Vector3 newPos = new Vector3(transform.position.x + 2f, transform.position.y, transform.position.z);
+        rb.AddForce(newPos * 5.0f * Time.deltaTime);
       }
       else
       {
