@@ -29,7 +29,6 @@ public class WeaponHandler : MonoBehaviour
     int i = 0;
     foreach (Transform weapon in transform)
     {
-      Debug.Log(i);
       if (i == selectedWeapon)
       {
         weapon.gameObject.SetActive(true);

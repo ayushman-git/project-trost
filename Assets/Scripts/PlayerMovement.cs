@@ -67,11 +67,12 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //dash
-    if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.A))
+    //if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.A))
     {
       // transform.position = new Vector3(transform.position.x + 100f, transform.position.y, transform.position.z);
-      Vector3 newPosition = new Vector3(-1f, transform.position.y, transform.position.z);
-      controller.Move(newPosition * 309f * Time.deltaTime);
+      
+     // Vector3 newPosition = new Vector3(10f, transform.position.y, transform.position.z);
+     // controller.Move(newPosition * 200f * Time.deltaTime);
     }
 
     //adding gravity to fall  
