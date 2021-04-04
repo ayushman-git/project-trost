@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230373442}
   m_LocalRotation: {x: 3.4833247e-15, y: -0.01995111, z: -4.8677425e-15, w: 0.999801}
-  m_LocalPosition: {x: 0.371, y: 1.78, z: 1.202}
+  m_LocalPosition: {x: 0.34, y: 1.15, z: 0.25}
   m_LocalScale: {x: 2.119355, y: 3.090575, z: 2.3366094}
   m_Children: []
   m_Father: {fileID: 774983199320100122}
@@ -88,7 +88,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.4987553e-37, y: 9.1835e-41, z: 0, w: -2.67066}
+  m_BoundingSphereOverride: {x: -2.1151199e+38, y: -2.1151199e+38, z: -2.1151199e+38,
+    w: -2.1151199e+38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -102,7 +103,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Name
-      value: MuzzleFlash01
+      value: MuzzleFlash01 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_Layer
